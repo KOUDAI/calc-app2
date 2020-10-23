@@ -16,21 +16,24 @@ class CalcsController2 extends Controller
         {
             case 'addition':
                 $kodai =$num1 + $num2;
-            break;
+                break;
+
             case 'subtraction':
                 $kodai =$num1 - $num2;
-            break;
+                break;
+
             case 'multiplication':
                 $kodai =$num1 * $num2;
-            break;
+                break;
+
             case 'division':
                 $kodai =$num1 / $num2;
-            break;
+                break;
             
-            default:
-            echo  'koudai';
+            default: 
+                $kodai =  '正しい値を入れてください｡';
         break;
     }
-    return view('calcs.show', ['kodai'=> $kodai]);
+    return view('calcs.show', ['kodai' => $kodai]);
     }
 }

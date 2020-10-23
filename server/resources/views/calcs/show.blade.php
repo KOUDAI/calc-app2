@@ -9,7 +9,7 @@
 
 <body>
   <h1>計算アプリ</h1>
-  <h2>{{$kodai}}</h2>
+  <h2>{{ $kodai }}</h2>
 </body>
 
 </html>
